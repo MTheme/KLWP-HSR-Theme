@@ -34,48 +34,71 @@ function main() {
         console.log(`数据库: ${index.nameCn}`);
         console.log(`Version: ${index.version}\n`);
 
-    // Load characters
-    const characters = loadJSON('database/characters.json');
-    console.log('='.repeat(60));
-    console.log('Characters | 角色');
-    console.log('='.repeat(60));
-    
-    // Find 5-star characters
-    const fiveStarChars = characters.characters.filter(c => c.rarity === 5);
-    console.log(`Total 5★ Characters: ${fiveStarChars.length}\n`);
-    
-    fiveStarChars.slice(0, 3).forEach(char => {
-        console.log(`${char.name} (ID: ${char.id})`);
-        console.log(`  Rarity: ${char.rarity}★`);
-        console.log(`  Path: ${char.path}`);
-        console.log(`  Element: ${char.element}`);
-        console.log(`  Icon: ${char.images.icon}\n`);
-    });
+        // Load characters
+        const characters = loadJSON('database/characters.json');
+        console.log('='.repeat(60));
+        console.log('Characters | 角色');
+        console.log('='.repeat(60));
 
-    // Load paths
-    const paths = loadJSON('database/paths.json');
-    console.log('='.repeat(60));
-    console.log('Paths | 命途');
-    console.log('='.repeat(60));
-    
-    paths.paths.forEach(path => {
-        console.log(`${path.name} (${path.nameEn})`);
-        console.log(`  ID: ${path.id}`);
-        console.log(`  Icon: ${path.images.icon}\n`);
-    });
+        // Find 5-star characters
+        const fiveStarChars = characters.characters.filter(c => c.rarity === 5);
+        console.log(`Total 5★ Characters: ${fiveStarChars.length}\n`);
 
-    // Count characters by element
-    console.log('='.repeat(60));
-    console.log('Characters by Element | 按属性统计角色');
-    console.log('='.repeat(60));
-    
-    const elements = loadJSON('database/elements.json');
-    elements.elements.forEach(element => {
-        const count = characters.characters.filter(
-            c => c.element === element.id
-        ).length;
-        console.log(`${element.name} (${element.nameEn}): ${count} characters`);
-    });
+        fiveStarChars.slice(0, 3).forEach(char => {
+            console.log(`${char.name} (ID: ${char.id})`);
+            console.log(`  Rarity: ${char.rarity}★`);
+            console.log(`  Path: ${char.path}`);
+            console.log(`  Element: ${char.element}`);
+            console.log(`  Icon: ${char.images.icon}\n`);
+        });
+
+        // Load paths
+        const paths = loadJSON('database/paths.json');
+        console.log('='.repeat(60));
+        console.log('Paths | 命途');
+        console.log('='.repeat(60));
+
+        paths.paths.forEach(path => {
+            console.log(`${path.name} (${path.nameEn})`);
+            console.log(`  ID: ${path.id}`);
+            console.log(`  Icon: ${path.images.icon}\n`);
+        });
+
+        // Count characters by element
+        console.log('='.repeat(60));
+        console.log('Characters by Element | 按属性统计角色');
+        console.log('='.repeat(60));
+
+        const elements = loadJSON('database/elements.json');
+        elements.elements.forEach(element => {
+            const count = characters.characters.filter(
+                c => c.element === element.id
+            ).length;
+            console.log(`${element.name} (${element.nameEn}): ${count} characters`);
+        });
+
+        // Character wallpapers demo
+        console.log('\n' + '='.repeat(60));
+        console.log('Wallpapers | 壁纸示例');
+        console.log('='.repeat(60));
+        const march = characters.characters.find(c => c.id === '1001');
+        if (march && march.images && Array.isArray(march.images.wallpapers)) {
+            console.log(`March 7th wallpapers: ${march.images.wallpapers.length}`);
+            const firstWp = march.images.wallpapers[0];
+            if (firstWp) {
+                console.log(`  First: [${firstWp.type} ${firstWp.resolution}] ${firstWp.path}`);
+            }
+        }
+
+        // Profile background packs (Pom-Pom & Wuluomingtu etc.)
+        const profileBg = loadJSON('database/profile_backgrounds.json');
+        const pomProfile = profileBg.profileBackgroundSets.find(s => s.id === 'pom_pom_profile');
+        if (pomProfile) {
+            console.log(`\nProfile Background: ${pomProfile.nameEn} | ${pomProfile.nameCn}`);
+            console.log(`  Scope: ${pomProfile.scope}`);
+            console.log(`  Background: ${pomProfile.background.path}`);
+            console.log(`  Sidebar(${pomProfile.sidebar.position}, ${pomProfile.sidebar.width}px): ${pomProfile.sidebar.path}`);
+        }
     } catch (error) {
         console.error('\nFailed to load database:', error.message);
         process.exit(1);
