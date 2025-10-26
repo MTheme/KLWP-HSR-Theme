@@ -24,8 +24,11 @@ KLWP-HSR-Theme/
     ├── paths/              # 命途图片 | Path images
     ├── elements/           # 属性图片 | Element images
     ├── lightcones/         # 光锥图片 | Light cone images
-    ├── relics/             # 遗器图片 | Relic images
-    └── ui/                 # UI 素材 | UI assets
+  ├── relics/             # 遗器图片 | Relic images
+  └── ui/                 # UI 素材 | UI assets
+    ├── loading/                # 加载界面背景 | Loading backgrounds
+  ├── profile_backgrounds/    # 资料/Profile 背景 | Profile backgrounds
+  └── wallpapers/             # 通用壁纸集合（不含特供/无路命途） | General wallpaper packs (excluding Pom-Pom/Wuluomingtu)
 ```
 
 ## 使用方法 | Usage
@@ -43,7 +46,8 @@ First, load the `index.json` file to see all available categories:
     "paths": { "database": "database/paths.json" },
     "elements": { "database": "database/elements.json" },
     "lightcones": { "database": "database/lightcones.json" },
-    "relics": { "database": "database/relics.json" }
+    "relics": { "database": "database/relics.json" },
+    "wallpapers": { "database": "database/wallpapers.json" }
   }
 }
 ```
@@ -62,8 +66,7 @@ First, load the `index.json` file to see all available categories:
   "images": {
     "icon": "assets/characters/march7th_icon.png",
     "portrait": "assets/characters/march7th_portrait.png",
-    "splash": "assets/characters/march7th_splash.png",
-    "preview": "assets/characters/march7th_preview.png"
+    "portraitBackground": "assets/ui/portrait_backgrounds/march7th_portrait_bg.jpg"
   }
 }
 ```
@@ -93,13 +96,26 @@ Place your image files in the corresponding `assets` folders, matching the paths
 - `assets/characters/march7th_icon.png`
 - `assets/paths/destruction_icon.png`
 - `assets/elements/ice_icon.png`
+- `assets/characters/wallpapers/march7th/march7th_mobile_1080x2400.jpg`
+- `assets/ui/loading/march7th_loading_default.jpg`
+- `assets/ui/profile_backgrounds/march7th_profile_default.jpg`
+- `assets/ui/portrait_backgrounds/march7th_portrait_bg.jpg`
+- `assets/ui/profile_backgrounds/pom_pom/pom_pom_bg_1080x2400.jpg`
+- `assets/paths/profile_backgrounds/nihility/nihility_bg_1080x2400.jpg`
 
 ## 数据库分类 | Database Categories
 
 ### 角色 | Characters
 - **文件**: `database/characters.json`
 - **包含**: 15+ 个可玩角色信息
-- **图片类型**: 图标、肖像、启动画面、预览图
+- **图片类型**: 图标、肖像、预览图、壁纸（多尺寸）、加载背景、Profile 背景
+  - 新增：`images.portraitBackground`（立绘背景图，单张）
+
+#### 角色图片字段扩展 | Character image fields extension
+- `images.wallpapers`: 数组，角色壁纸（建议区分 `mobile` / `desktop`，并标注 `resolution`）
+- `images.loadingBackgrounds`: 数组，角色主题加载界面背景
+- `images.profileBackgrounds`: 数组，角色资料页/Profile 背景
+- `images.portraitBackground`: 单图，立绘背板，用于在 KLWP 中与 `portrait` 叠加使用
 
 ### 命途 | Paths
 - **文件**: `database/paths.json`
@@ -121,6 +137,18 @@ Place your image files in the corresponding `assets` folders, matching the paths
 - **文件**: `database/relics.json`
 - **包含**: 遗器套装信息
 - **图片类型**: 各部位图标
+
+### 资料背景 | Profile Backgrounds
+- **文件**: `database/profile_backgrounds.json`
+- **包含**: 资料/Profile 背景集合（支持 `global`/`path`/`character` 三种作用域），每条记录包含 `background` 与 `sidebar` 资源及布局元信息
+- **图片路径**: `assets/ui/profile_backgrounds/*`、`assets/paths/profile_backgrounds/{pathId}/*`
+
+> 说明：列车长特供（Pom-Pom）与无路命途属于“资料背景”，包含一张背景图与一个侧边栏资源，已迁移至 `database/profile_backgrounds.json`。
+
+### 壁纸 | Wallpapers
+- **文件**: `database/wallpapers.json`
+- **包含**: 通用壁纸集合（不包含列车长特供与无路命途）
+- **图片路径**: `assets/ui/wallpapers/*`
 
 ## 数据格式说明 | Data Format
 
