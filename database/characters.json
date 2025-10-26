@@ -11,8 +11,36 @@
       "images": {
         "icon": "assets/characters/march7th_icon.png",
         "portrait": "assets/characters/march7th_portrait.png",
-        "splash": "assets/characters/march7th_splash.png",
-        "preview": "assets/characters/march7th_preview.png"
+        "portraitBackground": "assets/ui/portrait_backgrounds/march7th_portrait_bg.jpg",
+        "wallpapers": [
+          {
+            "id": "march7th_mobile_1080x2400",
+            "type": "mobile",
+            "resolution": "1080x2400",
+            "path": "assets/characters/wallpapers/march7th/march7th_mobile_1080x2400.jpg"
+          },
+          {
+            "id": "march7th_desktop_1920x1080",
+            "type": "desktop",
+            "resolution": "1920x1080",
+            "path": "assets/characters/wallpapers/march7th/march7th_desktop_1920x1080.jpg"
+          }
+        ],
+        "loadingBackgrounds": [
+          {
+            "id": "march7th_loading_default",
+            "resolution": "1920x1080",
+            "path": "assets/ui/loading/march7th_loading_default.jpg"
+          }
+        ],
+        "profileBackgrounds": [
+          {
+            "id": "march7th_profile_default",
+            "type": "profile",
+            "resolution": "1080x2400",
+            "path": "assets/ui/profile_backgrounds/march7th_profile_default.jpg"
+          }
+        ]
       }
     },
     {
@@ -23,9 +51,7 @@
       "element": "wind",
       "images": {
         "icon": "assets/characters/danheng_icon.png",
-        "portrait": "assets/characters/danheng_portrait.png",
-        "splash": "assets/characters/danheng_splash.png",
-        "preview": "assets/characters/danheng_preview.png"
+        "portrait": "assets/characters/danheng_portrait.png"
       }
     },
     {
@@ -36,9 +62,7 @@
       "element": "fire",
       "images": {
         "icon": "assets/characters/himeko_icon.png",
-        "portrait": "assets/characters/himeko_portrait.png",
-        "splash": "assets/characters/himeko_splash.png",
-        "preview": "assets/characters/himeko_preview.png"
+        "portrait": "assets/characters/himeko_portrait.png"
       }
     },
     {
@@ -49,9 +73,7 @@
       "element": "imaginary",
       "images": {
         "icon": "assets/characters/welt_icon.png",
-        "portrait": "assets/characters/welt_portrait.png",
-        "splash": "assets/characters/welt_splash.png",
-        "preview": "assets/characters/welt_preview.png"
+        "portrait": "assets/characters/welt_portrait.png"
       }
     },
     {
@@ -62,9 +84,7 @@
       "element": "lightning",
       "images": {
         "icon": "assets/characters/kafka_icon.png",
-        "portrait": "assets/characters/kafka_portrait.png",
-        "splash": "assets/characters/kafka_splash.png",
-        "preview": "assets/characters/kafka_preview.png"
+        "portrait": "assets/characters/kafka_portrait.png"
       }
     },
     {
@@ -75,9 +95,7 @@
       "element": "quantum",
       "images": {
         "icon": "assets/characters/silverwolf_icon.png",
-        "portrait": "assets/characters/silverwolf_portrait.png",
-        "splash": "assets/characters/silverwolf_splash.png",
-        "preview": "assets/characters/silverwolf_preview.png"
+        "portrait": "assets/characters/silverwolf_portrait.png"
       }
     },
     {
@@ -88,9 +106,7 @@
       "element": "quantum",
       "images": {
         "icon": "assets/characters/seele_icon.png",
-        "portrait": "assets/characters/seele_portrait.png",
-        "splash": "assets/characters/seele_splash.png",
-        "preview": "assets/characters/seele_preview.png"
+        "portrait": "assets/characters/seele_portrait.png"
       }
     },
     {
@@ -101,9 +117,7 @@
       "element": "wind",
       "images": {
         "icon": "assets/characters/bronya_icon.png",
-        "portrait": "assets/characters/bronya_portrait.png",
-        "splash": "assets/characters/bronya_splash.png",
-        "preview": "assets/characters/bronya_preview.png"
+        "portrait": "assets/characters/bronya_portrait.png"
       }
     },
     {
@@ -114,9 +128,7 @@
       "element": "ice",
       "images": {
         "icon": "assets/characters/gepard_icon.png",
-        "portrait": "assets/characters/gepard_portrait.png",
-        "splash": "assets/characters/gepard_splash.png",
-        "preview": "assets/characters/gepard_preview.png"
+        "portrait": "assets/characters/gepard_portrait.png"
       }
     },
     {
@@ -127,9 +139,7 @@
       "element": "physical",
       "images": {
         "icon": "assets/characters/clara_icon.png",
-        "portrait": "assets/characters/clara_portrait.png",
-        "splash": "assets/characters/clara_splash.png",
-        "preview": "assets/characters/clara_preview.png"
+        "portrait": "assets/characters/clara_portrait.png"
       }
     },
     {
@@ -140,9 +150,7 @@
       "element": "lightning",
       "images": {
         "icon": "assets/characters/jingyuan_icon.png",
-        "portrait": "assets/characters/jingyuan_portrait.png",
-        "splash": "assets/characters/jingyuan_splash.png",
-        "preview": "assets/characters/jingyuan_preview.png"
+        "portrait": "assets/characters/jingyuan_portrait.png"
       }
     },
     {
@@ -153,9 +161,7 @@
       "element": "wind",
       "images": {
         "icon": "assets/characters/blade_icon.png",
-        "portrait": "assets/characters/blade_portrait.png",
-        "splash": "assets/characters/blade_splash.png",
-        "preview": "assets/characters/blade_preview.png"
+        "portrait": "assets/characters/blade_portrait.png"
       }
     },
     {
@@ -166,9 +172,7 @@
       "element": "imaginary",
       "images": {
         "icon": "assets/characters/luocha_icon.png",
-        "portrait": "assets/characters/luocha_portrait.png",
-        "splash": "assets/characters/luocha_splash.png",
-        "preview": "assets/characters/luocha_preview.png"
+        "portrait": "assets/characters/luocha_portrait.png"
       }
     },
     {
@@ -179,9 +183,7 @@
       "element": "ice",
       "images": {
         "icon": "assets/characters/jingliu_icon.png",
-        "portrait": "assets/characters/jingliu_portrait.png",
-        "splash": "assets/characters/jingliu_splash.png",
-        "preview": "assets/characters/jingliu_preview.png"
+        "portrait": "assets/characters/jingliu_portrait.png"
       }
     },
     {
@@ -192,9 +194,7 @@
       "element": "lightning",
       "images": {
         "icon": "assets/characters/acheron_icon.png",
-        "portrait": "assets/characters/acheron_portrait.png",
-        "splash": "assets/characters/acheron_splash.png",
-        "preview": "assets/characters/acheron_preview.png"
+        "portrait": "assets/characters/acheron_portrait.png"
       }
     }
   ]
