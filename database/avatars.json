@@ -1,0 +1,68 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2025-10-26",
+    "avatars": [
+        {
+            "id": "pom_pom_avatar_default",
+            "nameCn": "列车长默认头像",
+            "nameEn": "Pom-Pom Default",
+            "path": "assets/ui/profile_backgrounds/pom_pom/avatars/pom_pom_avatar_default.png",
+            "layout": {
+                "shape": "circle",
+                "size": 128,
+                "anchor": "top-right",
+                "offset": {
+                    "x": -24,
+                    "y": 24
+                }
+            },
+            "default": true
+        },
+        {
+            "id": "pom_pom_avatar_wink",
+            "nameCn": "列车长眨眼",
+            "nameEn": "Pom-Pom Wink",
+            "path": "assets/ui/profile_backgrounds/pom_pom/avatars/pom_pom_avatar_wink.png",
+            "layout": {
+                "shape": "circle",
+                "size": 128,
+                "anchor": "top-right",
+                "offset": {
+                    "x": -24,
+                    "y": 24
+                }
+            }
+        },
+        {
+            "id": "nihility_avatar_default",
+            "nameCn": "虚无默认头像",
+            "nameEn": "Nihility Default",
+            "path": "assets/paths/profile_backgrounds/nihility/avatars/nihility_avatar_default.png",
+            "layout": {
+                "shape": "circle",
+                "size": 128,
+                "anchor": "top-left",
+                "offset": {
+                    "x": 24,
+                    "y": 24
+                }
+            },
+            "default": true
+        },
+        {
+            "id": "nihility_avatar_symbol",
+            "nameCn": "虚无符号",
+            "nameEn": "Nihility Symbol",
+            "path": "assets/paths/profile_backgrounds/nihility/avatars/nihility_avatar_symbol.png",
+            "layout": {
+                "shape": "square",
+                "size": 112,
+                "anchor": "top-left",
+                "offset": {
+                    "x": 24,
+                    "y": 24
+                }
+            }
+        }
+    ]
+}
