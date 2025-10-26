@@ -1,0 +1,39 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2025-10-26",
+    "profileBackgroundSets": [
+        {
+            "id": "pom_pom_profile",
+            "nameCn": "列车长特供",
+            "nameEn": "Pom-Pom Special",
+            "scope": "global",
+            "background": {
+                "resolution": "1080x2400",
+                "path": "assets/ui/profile_backgrounds/pom_pom/pom_pom_bg_1080x2400.jpg"
+            },
+            "sidebar": {
+                "path": "assets/ui/profile_backgrounds/pom_pom/pom_pom_sidebar.png",
+                "position": "right",
+                "width": 220,
+                "anchor": "top"
+            }
+        },
+        {
+            "id": "wuluomingtu_profile",
+            "nameCn": "无路命途",
+            "nameEn": "Wuluo Mingtu",
+            "scope": "path",
+            "targetId": "nihility",
+            "background": {
+                "resolution": "1080x2400",
+                "path": "assets/paths/profile_backgrounds/nihility/nihility_bg_1080x2400.jpg"
+            },
+            "sidebar": {
+                "path": "assets/paths/profile_backgrounds/nihility/nihility_sidebar.png",
+                "position": "left",
+                "width": 240,
+                "anchor": "top"
+            }
+        }
+    ]
+}
