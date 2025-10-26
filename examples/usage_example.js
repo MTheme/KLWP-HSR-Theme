@@ -98,6 +98,29 @@ function main() {
             console.log(`  Scope: ${pomProfile.scope}`);
             console.log(`  Background: ${pomProfile.background.path}`);
             console.log(`  Sidebar(${pomProfile.sidebar.position}, ${pomProfile.sidebar.width}px): ${pomProfile.sidebar.path}`);
+
+            // Load avatars independently (global-flat) and list them
+            const avatarsDb = loadJSON('database/avatars.json');
+            const list = avatarsDb.avatars || [];
+            if (list.length > 0) {
+                console.log('  Avatars (global):');
+                list.forEach((av, idx) => {
+                    const mark = av.default ? '*' : ' ';
+                    const layout = av.layout || {};
+                    const shape = layout.shape || 'circle';
+                    const size = layout.size || 128;
+                    console.log(`   ${mark} [${idx}] ${av.nameEn} | ${av.nameCn} (${shape} ${size}px) -> ${av.path}`);
+                });
+
+                // Demonstrate switching avatar: pick next after the first default, else from index 0
+                const defaultIdx = list.findIndex(a => a.default);
+                const startIdx = defaultIdx >= 0 ? defaultIdx : 0;
+                const nextIdx = (startIdx + 1) % list.length;
+                const selected = list[nextIdx];
+                console.log(`  Switch to avatar: ${selected.nameEn} (${selected.id})`);
+            } else {
+                console.log('  Avatars: (none)');
+            }
         }
     } catch (error) {
         console.error('\nFailed to load database:', error.message);
