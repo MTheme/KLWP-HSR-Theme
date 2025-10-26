@@ -51,6 +51,15 @@
       "description": "Equipable relic sets",
       "descriptionCn": "可装备的遗器套装"
     },
+    "profileAvatars": {
+      "name": "Profile Avatars",
+      "nameCn": "资料头像",
+      "database": "database/avatars.json",
+      "assetsPath": "assets/",
+      "count": 4,
+      "description": "Global selectable avatars (flat list, independent of backgrounds/paths)",
+      "descriptionCn": "全局可切换头像（扁平列表，不区分背景/命途）"
+    },
     "profileBackgrounds": {
       "name": "Profile Backgrounds",
       "nameCn": "资料背景",
