@@ -140,10 +140,19 @@ Place your image files in the corresponding `assets` folders, matching the paths
 
 ### 资料背景 | Profile Backgrounds
 - **文件**: `database/profile_backgrounds.json`
-- **包含**: 资料/Profile 背景集合（支持 `global`/`path`/`character` 三种作用域），每条记录包含 `background` 与 `sidebar` 资源及布局元信息
+- **包含**: 资料/Profile 背景集合（支持 `global`/`path`/`character` 三种作用域），每条记录包含：
+  - `background`：背景图（含分辨率与路径）
+  - `sidebar`：侧边栏图片与布局（位置、宽度、锚点）
 - **图片路径**: `assets/ui/profile_backgrounds/*`、`assets/paths/profile_backgrounds/{pathId}/*`
 
 > 说明：列车长特供（Pom-Pom）与无路命途属于“资料背景”，包含一张背景图与一个侧边栏资源，已迁移至 `database/profile_backgrounds.json`。
+>
+### 资料头像 | Profile Avatars
+- **文件**: `database/avatars.json`
+- **包含**: 全局可切换的头像列表（不分组、不按背景/命途区分）
+  - `avatars[]`: 头像数组（全局生效）
+    - 字段：`id`、`nameCn`、`nameEn`、`path`、`layout`（`shape`/`size`/`anchor`/`offset`）、`default`（是否默认）
+- **图片路径**: 复用 `assets/ui/profile_backgrounds/*/avatars/` 与 `assets/paths/profile_backgrounds/{pathId}/avatars/`
 
 ### 壁纸 | Wallpapers
 - **文件**: `database/wallpapers.json`
