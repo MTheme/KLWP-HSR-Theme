@@ -10,20 +10,29 @@ const fs = require('fs');
 
 // Load JSON file
 function loadJSON(filepath) {
-    const data = fs.readFileSync(filepath, 'utf-8');
-    return JSON.parse(data);
+    try {
+        if (!fs.existsSync(filepath)) {
+            throw new Error(`File not found: ${filepath}`);
+        }
+        const data = fs.readFileSync(filepath, 'utf-8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.error(`Error loading ${filepath}:`, error.message);
+        throw error;
+    }
 }
 
 // Main function
 function main() {
-    console.log('Loading Honkai: Star Rail Asset Database...');
-    console.log('加载崩坏：星穹铁道素材数据库...\n');
+    try {
+        console.log('Loading Honkai: Star Rail Asset Database...');
+        console.log('加载崩坏：星穹铁道素材数据库...\n');
 
-    // Load main index
-    const index = loadJSON('index.json');
-    console.log(`Database: ${index.name}`);
-    console.log(`数据库: ${index.nameCn}`);
-    console.log(`Version: ${index.version}\n`);
+        // Load main index
+        const index = loadJSON('index.json');
+        console.log(`Database: ${index.name}`);
+        console.log(`数据库: ${index.nameCn}`);
+        console.log(`Version: ${index.version}\n`);
 
     // Load characters
     const characters = loadJSON('database/characters.json');
@@ -67,6 +76,10 @@ function main() {
         ).length;
         console.log(`${element.name} (${element.nameEn}): ${count} characters`);
     });
+    } catch (error) {
+        console.error('\nFailed to load database:', error.message);
+        process.exit(1);
+    }
 }
 
 // Run if executed directly
@@ -85,10 +98,16 @@ async function loadDatabase() {
     try {
         // Load index
         const indexResponse = await fetch('index.json');
+        if (!indexResponse.ok) {
+            throw new Error(`Failed to load index.json: ${indexResponse.statusText}`);
+        }
         const index = await indexResponse.json();
         
         // Load characters
         const charsResponse = await fetch('database/characters.json');
+        if (!charsResponse.ok) {
+            throw new Error(`Failed to load characters.json: ${charsResponse.statusText}`);
+        }
         const characters = await charsResponse.json();
         
         // Use the data
@@ -97,6 +116,9 @@ async function loadDatabase() {
         
         // Example: Get character image
         const march7th = characters.characters.find(c => c.id === '1001');
+        if (!march7th) {
+            throw new Error('Character not found');
+        }
         console.log(`March 7th icon: ${march7th.images.icon}`);
         
         // Create an img element
