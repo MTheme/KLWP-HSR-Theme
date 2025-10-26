@@ -1,10 +1,10 @@
 {
-  "version": "1.0",
+  "name": "HSR Asset Database",
+  "nameCn": "崩坏：星穹铁道 图片素材数据库",
+  "version": "1.1",
   "lastUpdated": "2025-10-26",
-  "name": "Honkai: Star Rail Asset Database",
-  "nameCn": "崩坏：星穹铁道素材数据库",
-  "description": "A comprehensive database for Honkai: Star Rail image assets including characters, paths, elements, light cones, and relics.",
-  "descriptionCn": "崩坏：星穹铁道的完整图片素材数据库，包括角色、命途、属性、光锥和遗器。",
+  "description": "A comprehensive database for Honkai: Star Rail image assets including characters, paths, elements, light cones, relics, and wallpapers.",
+  "descriptionCn": "崩坏：星穹铁道的完整图片素材数据库，包括角色、命途、属性、光锥、遗器与壁纸。",
   "categories": {
     "characters": {
       "name": "Characters",
@@ -50,6 +50,24 @@
       "count": 4,
       "description": "Equipable relic sets",
       "descriptionCn": "可装备的遗器套装"
+    },
+    "profileBackgrounds": {
+      "name": "Profile Backgrounds",
+      "nameCn": "资料背景",
+      "database": "database/profile_backgrounds.json",
+      "assetsPath": "assets/ui/profile_backgrounds/",
+      "count": 2,
+      "description": "Profile backgrounds with optional sidebar and layout metadata",
+      "descriptionCn": "带侧边栏与布局信息的资料/Profile 背景集合"
+    },
+    "wallpapers": {
+      "name": "Wallpapers",
+      "nameCn": "壁纸",
+      "database": "database/wallpapers.json",
+      "assetsPath": "assets/",
+      "count": 0,
+      "description": "General wallpaper packs (note: Pom-Pom & Wuluomingtu are Profile Backgrounds)",
+      "descriptionCn": "通用壁纸集合（注意：列车长特供与无路命途属于资料背景）"
     }
   },
   "usage": {
