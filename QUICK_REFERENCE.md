@@ -7,11 +7,13 @@
 
 ```json
 {
-  "version": "1.0",
+  "version": "1.1",
   "categories": {
     "characters": { "database": "database/characters.json" },
     "paths": { "database": "database/paths.json" },
-    ...
+    "elements": { "database": "database/elements.json" },
+    "profileBackgrounds": { "database": "database/profile_backgrounds.json" },
+    "wallpapers": { "database": "database/wallpapers.json" }
   }
 }
 ```
@@ -29,8 +31,17 @@
   "images": {
     "icon": "assets/characters/march7th_icon.png",
     "portrait": "assets/characters/march7th_portrait.png",
-    "splash": "assets/characters/march7th_splash.png",
-    "preview": "assets/characters/march7th_preview.png"
+    "portraitBackground": "assets/ui/portrait_backgrounds/march7th_portrait_bg.jpg",
+    "wallpapers": [
+      { "id": "march7th_mobile_1080x2400", "type": "mobile", "resolution": "1080x2400", "path": "assets/characters/wallpapers/march7th/march7th_mobile_1080x2400.jpg" },
+      { "id": "march7th_desktop_1920x1080", "type": "desktop", "resolution": "1920x1080", "path": "assets/characters/wallpapers/march7th/march7th_desktop_1920x1080.jpg" }
+    ],
+    "loadingBackgrounds": [
+      { "id": "march7th_loading_default", "resolution": "1920x1080", "path": "assets/ui/loading/march7th_loading_default.jpg" }
+    ],
+    "profileBackgrounds": [
+      { "id": "march7th_profile_default", "type": "profile", "resolution": "1080x2400", "path": "assets/ui/profile_backgrounds/march7th_profile_default.jpg" }
+    ]
   }
 }
 ```
@@ -135,6 +146,8 @@ const iceChars = data.characters.filter(c => c.element === 'ice');
 | Elements | 属性 | `database/elements.json` | 7 | Element types |
 | Light Cones | 光锥 | `database/lightcones.json` | 9 | Equipable weapons |
 | Relics | 遗器 | `database/relics.json` | 4 | Equipable relic sets |
+| Profile Backgrounds | 资料背景 | `database/profile_backgrounds.json` | 2 | Background + sidebar sets |
+| Wallpapers | 壁纸 | `database/wallpapers.json` | — | General wallpaper packs |
 
 ## Element IDs | 属性 ID
 
@@ -161,8 +174,10 @@ const iceChars = data.characters.filter(c => c.element === 'ice');
 ### Character Images | 角色图片
 - `icon` - 小图标
 - `portrait` - 肖像
-- `splash` - 启动画面
-- `preview` - 预览图
+- `portraitBackground` - 立绘背景图（单图）
+- `wallpapers[]` - 壁纸数组（包含 `type` 与 `resolution`）
+- `loadingBackgrounds[]` - 加载背景数组
+- `profileBackgrounds[]` - Profile 背景数组
 
 ### Path Images | 命途图片
 - `icon` - 图标
@@ -180,15 +195,36 @@ const iceChars = data.characters.filter(c => c.element === 'ice');
 ### Relic Images | 遗器图片
 - `icon` - 图标（每个部位）
 
+### Wallpaper Packs | 壁纸集合
+- 通用壁纸集合，存储在 `database/wallpapers.json`
+- 图片位于 `assets/ui/wallpapers/*`
+
+### Profile Background Sets | 资料背景集合
+- 结构文件：`database/profile_backgrounds.json`
+- 每条记录包含：
+  - `scope`: `global` | `path` | `character`
+  - `targetId`: 当 `scope` 为 `path`/`character` 时指定目标 ID
+  - `background`: { `resolution`, `path` }
+  - `sidebar`: { `path`, `position`(left/right), `width`(px), `anchor` }
+- 资源路径：`assets/ui/profile_backgrounds/*` 或 `assets/paths/profile_backgrounds/{pathId}/*`
+
 ## File Naming Convention | 文件命名规范
 
 ### Characters | 角色
 - Format: `{character_name}_{image_type}.png`
 - Example: `march7th_icon.png`
+  
+#### Character Wallpapers | 角色壁纸
+- Format: `assets/characters/wallpapers/{character_name}/{character_name}_{type}_{resolution}.jpg`
+- Example: `assets/characters/wallpapers/march7th/march7th_mobile_1080x2400.jpg`
 
 ### Paths | 命途
 - Format: `{path_id}_{image_type}.png`
 - Example: `destruction_icon.png`
+  
+#### Path Wallpapers | 命途壁纸
+- Format: `assets/paths/wallpapers/{path_id}/{path_id}_{type}_{resolution}.jpg`
+- Example: `assets/paths/wallpapers/nihility/nihility_desktop_2560x1440.jpg`
 
 ### Elements | 属性
 - Format: `{element_id}_{image_type}.png`
@@ -201,6 +237,10 @@ const iceChars = data.characters.filter(c => c.element === 'ice');
 ### Relics | 遗器
 - Format: `{relic_name}_{slot}_icon.png`
 - Example: `passerby_head_icon.png`
+
+### UI Backgrounds | UI 背景
+- Loading: `assets/ui/loading/{name}_loading_{variant}.jpg`
+- Profile: `assets/ui/profile_backgrounds/{name}_profile_{variant}.jpg`
 
 ## Tips | 提示
 
