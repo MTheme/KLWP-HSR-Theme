@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-10-26",
+  "elements": [
+    {
+      "id": "physical",
+      "name": "物理",
+      "nameEn": "Physical",
+      "color": "#A5A5A5",
+      "images": {
+        "icon": "assets/elements/physical_icon.png",
+        "symbol": "assets/elements/physical_symbol.png"
+      }
+    },
+    {
+      "id": "fire",
+      "name": "火",
+      "nameEn": "Fire",
+      "color": "#E84057",
+      "images": {
+        "icon": "assets/elements/fire_icon.png",
+        "symbol": "assets/elements/fire_symbol.png"
+      }
+    },
+    {
+      "id": "ice",
+      "name": "冰",
+      "nameEn": "Ice",
+      "color": "#4E9BE1",
+      "images": {
+        "icon": "assets/elements/ice_icon.png",
+        "symbol": "assets/elements/ice_symbol.png"
+      }
+    },
+    {
+      "id": "lightning",
+      "name": "雷",
+      "nameEn": "Lightning",
+      "color": "#B980E0",
+      "images": {
+        "icon": "assets/elements/lightning_icon.png",
+        "symbol": "assets/elements/lightning_symbol.png"
+      }
+    },
+    {
+      "id": "wind",
+      "name": "风",
+      "nameEn": "Wind",
+      "color": "#52D5A4",
+      "images": {
+        "icon": "assets/elements/wind_icon.png",
+        "symbol": "assets/elements/wind_symbol.png"
+      }
+    },
+    {
+      "id": "quantum",
+      "name": "量子",
+      "nameEn": "Quantum",
+      "color": "#6C77E0",
+      "images": {
+        "icon": "assets/elements/quantum_icon.png",
+        "symbol": "assets/elements/quantum_symbol.png"
+      }
+    },
+    {
+      "id": "imaginary",
+      "name": "虚数",
+      "nameEn": "Imaginary",
+      "color": "#F4D258",
+      "images": {
+        "icon": "assets/elements/imaginary_icon.png",
+        "symbol": "assets/elements/imaginary_symbol.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-10-26",
+  "paths": [
+    {
+      "id": "destruction",
+      "name": "毁灭",
+      "nameEn": "Destruction",
+      "description": "追寻「毁灭」的行者。",
+      "descriptionEn": "Trailblazers who follow the path of Destruction.",
+      "images": {
+        "icon": "assets/paths/destruction_icon.png",
+        "splash": "assets/paths/destruction_splash.png",
+        "symbol": "assets/paths/destruction_symbol.png"
+      }
+    },
+    {
+      "id": "hunt",
+      "name": "巡猎",
+      "nameEn": "The Hunt",
+      "description": "追寻「巡猎」的行者。",
+      "descriptionEn": "Trailblazers who follow the path of The Hunt.",
+      "images": {
+        "icon": "assets/paths/hunt_icon.png",
+        "splash": "assets/paths/hunt_splash.png",
+        "symbol": "assets/paths/hunt_symbol.png"
+      }
+    },
+    {
+      "id": "erudition",
+      "name": "智识",
+      "nameEn": "Erudition",
+      "description": "追寻「智识」的行者。",
+      "descriptionEn": "Trailblazers who follow the path of Erudition.",
+      "images": {
+        "icon": "assets/paths/erudition_icon.png",
+        "splash": "assets/paths/erudition_splash.png",
+        "symbol": "assets/paths/erudition_symbol.png"
+      }
+    },
+    {
+      "id": "harmony",
+      "name": "同谐",
+      "nameEn": "Harmony",
+      "description": "追寻「同谐」的行者。",
+      "descriptionEn": "Trailblazers who follow the path of Harmony.",
+      "images": {
+        "icon": "assets/paths/harmony_icon.png",
+        "splash": "assets/paths/harmony_splash.png",
+        "symbol": "assets/paths/harmony_symbol.png"
+      }
+    },
+    {
+      "id": "nihility",
+      "name": "虚无",
+      "nameEn": "Nihility",
+      "description": "追寻「虚无」的行者。",
+      "descriptionEn": "Trailblazers who follow the path of Nihility.",
+      "images": {
+        "icon": "assets/paths/nihility_icon.png",
+        "splash": "assets/paths/nihility_splash.png",
+        "symbol": "assets/paths/nihility_symbol.png"
+      }
+    },
+    {
+      "id": "preservation",
+      "name": "存护",
+      "nameEn": "Preservation",
+      "description": "追寻「存护」的行者。",
+      "descriptionEn": "Trailblazers who follow the path of Preservation.",
+      "images": {
+        "icon": "assets/paths/preservation_icon.png",
+        "splash": "assets/paths/preservation_splash.png",
+        "symbol": "assets/paths/preservation_symbol.png"
+      }
+    },
+    {
+      "id": "abundance",
+      "name": "丰饶",
+      "nameEn": "Abundance",
+      "description": "追寻「丰饶」的行者。",
+      "descriptionEn": "Trailblazers who follow the path of Abundance.",
+      "images": {
+        "icon": "assets/paths/abundance_icon.png",
+        "splash": "assets/paths/abundance_splash.png",
+        "symbol": "assets/paths/abundance_symbol.png"
+      }
+    }
+  ]
+}

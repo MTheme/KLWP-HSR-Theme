@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-10-26",
+  "name": "Honkai: Star Rail Asset Database",
+  "nameCn": "崩坏：星穹铁道素材数据库",
+  "description": "A comprehensive database for Honkai: Star Rail image assets including characters, paths, elements, light cones, and relics.",
+  "descriptionCn": "崩坏：星穹铁道的完整图片素材数据库，包括角色、命途、属性、光锥和遗器。",
+  "categories": {
+    "characters": {
+      "name": "Characters",
+      "nameCn": "角色",
+      "database": "database/characters.json",
+      "assetsPath": "assets/characters/",
+      "count": 15,
+      "description": "Playable characters in Honkai: Star Rail",
+      "descriptionCn": "崩坏：星穹铁道的可玩角色"
+    },
+    "paths": {
+      "name": "Paths",
+      "nameCn": "命途",
+      "database": "database/paths.json",
+      "assetsPath": "assets/paths/",
+      "count": 7,
+      "description": "The seven Paths that characters follow",
+      "descriptionCn": "角色遵循的七种命途"
+    },
+    "elements": {
+      "name": "Elements",
+      "nameCn": "属性",
+      "database": "database/elements.json",
+      "assetsPath": "assets/elements/",
+      "count": 7,
+      "description": "Combat element types",
+      "descriptionCn": "战斗属性类型"
+    },
+    "lightcones": {
+      "name": "Light Cones",
+      "nameCn": "光锥",
+      "database": "database/lightcones.json",
+      "assetsPath": "assets/lightcones/",
+      "count": 9,
+      "description": "Equipable Light Cones weapons",
+      "descriptionCn": "可装备的光锥武器"
+    },
+    "relics": {
+      "name": "Relics",
+      "nameCn": "遗器",
+      "database": "database/relics.json",
+      "assetsPath": "assets/relics/",
+      "count": 4,
+      "description": "Equipable relic sets",
+      "descriptionCn": "可装备的遗器套装"
+    }
+  },
+  "usage": {
+    "description": "How to use this database",
+    "descriptionCn": "如何使用此数据库",
+    "examples": [
+      {
+        "step": 1,
+        "description": "Load the index.json file to see all available categories",
+        "descriptionCn": "加载 index.json 文件查看所有可用类别"
+      },
+      {
+        "step": 2,
+        "description": "Access specific category JSON file (e.g., database/characters.json)",
+        "descriptionCn": "访问特定类别的 JSON 文件（例如：database/characters.json）"
+      },
+      {
+        "step": 3,
+        "description": "Use the image paths in the 'images' field to locate assets",
+        "descriptionCn": "使用 'images' 字段中的图片路径来定位素材"
+      },
+      {
+        "step": 4,
+        "description": "Place your actual image files in the corresponding assets folders",
+        "descriptionCn": "将实际的图片文件放在相应的 assets 文件夹中"
+      }
+    ]
+  }
+}

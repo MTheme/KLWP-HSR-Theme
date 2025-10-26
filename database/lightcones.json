@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-10-26",
+  "lightcones": [
+    {
+      "id": "20000",
+      "name": "Sleep Like the Dead",
+      "nameCn": "如泥酣眠",
+      "rarity": 5,
+      "path": "hunt",
+      "images": {
+        "icon": "assets/lightcones/sleep_like_the_dead_icon.png",
+        "portrait": "assets/lightcones/sleep_like_the_dead_portrait.png"
+      }
+    },
+    {
+      "id": "20001",
+      "name": "In the Night",
+      "nameCn": "于夜色中",
+      "rarity": 5,
+      "path": "hunt",
+      "images": {
+        "icon": "assets/lightcones/in_the_night_icon.png",
+        "portrait": "assets/lightcones/in_the_night_portrait.png"
+      }
+    },
+    {
+      "id": "21000",
+      "name": "Night on the Milky Way",
+      "nameCn": "银河铁道之夜",
+      "rarity": 5,
+      "path": "erudition",
+      "images": {
+        "icon": "assets/lightcones/night_on_the_milky_way_icon.png",
+        "portrait": "assets/lightcones/night_on_the_milky_way_portrait.png"
+      }
+    },
+    {
+      "id": "21001",
+      "name": "The Seriousness of Breakfast",
+      "nameCn": "早餐的仪式感",
+      "rarity": 4,
+      "path": "erudition",
+      "images": {
+        "icon": "assets/lightcones/the_seriousness_of_breakfast_icon.png",
+        "portrait": "assets/lightcones/the_seriousness_of_breakfast_portrait.png"
+      }
+    },
+    {
+      "id": "23000",
+      "name": "In the Name of the World",
+      "nameCn": "以世界之名",
+      "rarity": 5,
+      "path": "nihility",
+      "images": {
+        "icon": "assets/lightcones/in_the_name_of_the_world_icon.png",
+        "portrait": "assets/lightcones/in_the_name_of_the_world_portrait.png"
+      }
+    },
+    {
+      "id": "23001",
+      "name": "Patience Is All You Need",
+      "nameCn": "唯需等待",
+      "rarity": 5,
+      "path": "nihility",
+      "images": {
+        "icon": "assets/lightcones/patience_is_all_you_need_icon.png",
+        "portrait": "assets/lightcones/patience_is_all_you_need_portrait.png"
+      }
+    },
+    {
+      "id": "23002",
+      "name": "Solitary Healing",
+      "nameCn": "孤独的疗愈",
+      "rarity": 5,
+      "path": "nihility",
+      "images": {
+        "icon": "assets/lightcones/solitary_healing_icon.png",
+        "portrait": "assets/lightcones/solitary_healing_portrait.png"
+      }
+    },
+    {
+      "id": "24000",
+      "name": "Moment of Victory",
+      "nameCn": "制胜的瞬间",
+      "rarity": 5,
+      "path": "preservation",
+      "images": {
+        "icon": "assets/lightcones/moment_of_victory_icon.png",
+        "portrait": "assets/lightcones/moment_of_victory_portrait.png"
+      }
+    },
+    {
+      "id": "24001",
+      "name": "Texture of Memories",
+      "nameCn": "记忆的质感",
+      "rarity": 5,
+      "path": "preservation",
+      "images": {
+        "icon": "assets/lightcones/texture_of_memories_icon.png",
+        "portrait": "assets/lightcones/texture_of_memories_portrait.png"
+      }
+    }
+  ]
+}

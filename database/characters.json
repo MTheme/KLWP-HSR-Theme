@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-10-26",
+  "characters": [
+    {
+      "id": "1001",
+      "name": "March 7th",
+      "rarity": 4,
+      "path": "preservation",
+      "element": "ice",
+      "images": {
+        "icon": "assets/characters/march7th_icon.png",
+        "portrait": "assets/characters/march7th_portrait.png",
+        "splash": "assets/characters/march7th_splash.png",
+        "preview": "assets/characters/march7th_preview.png"
+      }
+    },
+    {
+      "id": "1002",
+      "name": "Dan Heng",
+      "rarity": 4,
+      "path": "hunt",
+      "element": "wind",
+      "images": {
+        "icon": "assets/characters/danheng_icon.png",
+        "portrait": "assets/characters/danheng_portrait.png",
+        "splash": "assets/characters/danheng_splash.png",
+        "preview": "assets/characters/danheng_preview.png"
+      }
+    },
+    {
+      "id": "1003",
+      "name": "Himeko",
+      "rarity": 5,
+      "path": "erudition",
+      "element": "fire",
+      "images": {
+        "icon": "assets/characters/himeko_icon.png",
+        "portrait": "assets/characters/himeko_portrait.png",
+        "splash": "assets/characters/himeko_splash.png",
+        "preview": "assets/characters/himeko_preview.png"
+      }
+    },
+    {
+      "id": "1004",
+      "name": "Welt",
+      "rarity": 5,
+      "path": "nihility",
+      "element": "imaginary",
+      "images": {
+        "icon": "assets/characters/welt_icon.png",
+        "portrait": "assets/characters/welt_portrait.png",
+        "splash": "assets/characters/welt_splash.png",
+        "preview": "assets/characters/welt_preview.png"
+      }
+    },
+    {
+      "id": "1005",
+      "name": "Kafka",
+      "rarity": 5,
+      "path": "nihility",
+      "element": "lightning",
+      "images": {
+        "icon": "assets/characters/kafka_icon.png",
+        "portrait": "assets/characters/kafka_portrait.png",
+        "splash": "assets/characters/kafka_splash.png",
+        "preview": "assets/characters/kafka_preview.png"
+      }
+    },
+    {
+      "id": "1006",
+      "name": "Silver Wolf",
+      "rarity": 5,
+      "path": "nihility",
+      "element": "quantum",
+      "images": {
+        "icon": "assets/characters/silverwolf_icon.png",
+        "portrait": "assets/characters/silverwolf_portrait.png",
+        "splash": "assets/characters/silverwolf_splash.png",
+        "preview": "assets/characters/silverwolf_preview.png"
+      }
+    },
+    {
+      "id": "1101",
+      "name": "Seele",
+      "rarity": 5,
+      "path": "hunt",
+      "element": "quantum",
+      "images": {
+        "icon": "assets/characters/seele_icon.png",
+        "portrait": "assets/characters/seele_portrait.png",
+        "splash": "assets/characters/seele_splash.png",
+        "preview": "assets/characters/seele_preview.png"
+      }
+    },
+    {
+      "id": "1102",
+      "name": "Bronya",
+      "rarity": 5,
+      "path": "harmony",
+      "element": "wind",
+      "images": {
+        "icon": "assets/characters/bronya_icon.png",
+        "portrait": "assets/characters/bronya_portrait.png",
+        "splash": "assets/characters/bronya_splash.png",
+        "preview": "assets/characters/bronya_preview.png"
+      }
+    },
+    {
+      "id": "1103",
+      "name": "Gepard",
+      "rarity": 5,
+      "path": "preservation",
+      "element": "ice",
+      "images": {
+        "icon": "assets/characters/gepard_icon.png",
+        "portrait": "assets/characters/gepard_portrait.png",
+        "splash": "assets/characters/gepard_splash.png",
+        "preview": "assets/characters/gepard_preview.png"
+      }
+    },
+    {
+      "id": "1104",
+      "name": "Clara",
+      "rarity": 5,
+      "path": "destruction",
+      "element": "physical",
+      "images": {
+        "icon": "assets/characters/clara_icon.png",
+        "portrait": "assets/characters/clara_portrait.png",
+        "splash": "assets/characters/clara_splash.png",
+        "preview": "assets/characters/clara_preview.png"
+      }
+    },
+    {
+      "id": "1201",
+      "name": "Jing Yuan",
+      "rarity": 5,
+      "path": "erudition",
+      "element": "lightning",
+      "images": {
+        "icon": "assets/characters/jingyuan_icon.png",
+        "portrait": "assets/characters/jingyuan_portrait.png",
+        "splash": "assets/characters/jingyuan_splash.png",
+        "preview": "assets/characters/jingyuan_preview.png"
+      }
+    },
+    {
+      "id": "1202",
+      "name": "Blade",
+      "rarity": 5,
+      "path": "destruction",
+      "element": "wind",
+      "images": {
+        "icon": "assets/characters/blade_icon.png",
+        "portrait": "assets/characters/blade_portrait.png",
+        "splash": "assets/characters/blade_splash.png",
+        "preview": "assets/characters/blade_preview.png"
+      }
+    },
+    {
+      "id": "1203",
+      "name": "Luocha",
+      "rarity": 5,
+      "path": "abundance",
+      "element": "imaginary",
+      "images": {
+        "icon": "assets/characters/luocha_icon.png",
+        "portrait": "assets/characters/luocha_portrait.png",
+        "splash": "assets/characters/luocha_splash.png",
+        "preview": "assets/characters/luocha_preview.png"
+      }
+    },
+    {
+      "id": "1204",
+      "name": "Jingliu",
+      "rarity": 5,
+      "path": "destruction",
+      "element": "ice",
+      "images": {
+        "icon": "assets/characters/jingliu_icon.png",
+        "portrait": "assets/characters/jingliu_portrait.png",
+        "splash": "assets/characters/jingliu_splash.png",
+        "preview": "assets/characters/jingliu_preview.png"
+      }
+    },
+    {
+      "id": "1205",
+      "name": "Acheron",
+      "rarity": 5,
+      "path": "nihility",
+      "element": "lightning",
+      "images": {
+        "icon": "assets/characters/acheron_icon.png",
+        "portrait": "assets/characters/acheron_portrait.png",
+        "splash": "assets/characters/acheron_splash.png",
+        "preview": "assets/characters/acheron_preview.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-10-26",
+  "relics": [
+    {
+      "id": "101",
+      "name": "Passerby of Wandering Cloud",
+      "nameCn": "流云寻过客",
+      "type": "cavern",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Passerby's Rejuvenated Wooden Hairstick",
+          "nameCn": "过客的逢春木簪",
+          "images": {
+            "icon": "assets/relics/passerby_head_icon.png"
+          }
+        },
+        {
+          "slot": "hands",
+          "name": "Passerby's Roaming Dragon Bracer",
+          "nameCn": "过客的游龙臂鞲",
+          "images": {
+            "icon": "assets/relics/passerby_hands_icon.png"
+          }
+        },
+        {
+          "slot": "body",
+          "name": "Passerby's Ragged Embroided Coat",
+          "nameCn": "过客的残绣风衣",
+          "images": {
+            "icon": "assets/relics/passerby_body_icon.png"
+          }
+        },
+        {
+          "slot": "feet",
+          "name": "Passerby's Stygian Hiking Boots",
+          "nameCn": "过客的冥途游履",
+          "images": {
+            "icon": "assets/relics/passerby_feet_icon.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "name": "Musketeer of Wild Wheat",
+      "nameCn": "野穗伴行的快枪手",
+      "type": "cavern",
+      "pieces": [
+        {
+          "slot": "head",
+          "name": "Musketeer's Wild Wheat Felt Hat",
+          "nameCn": "快枪手的野穗毡帽",
+          "images": {
+            "icon": "assets/relics/musketeer_head_icon.png"
+          }
+        },
+        {
+          "slot": "hands",
+          "name": "Musketeer's Coarse Leather Gloves",
+          "nameCn": "快枪手的粗革手套",
+          "images": {
+            "icon": "assets/relics/musketeer_hands_icon.png"
+          }
+        },
+        {
+          "slot": "body",
+          "name": "Musketeer's Wind-Hunting Shawl",
+          "nameCn": "快枪手的猎风披肩",
+          "images": {
+            "icon": "assets/relics/musketeer_body_icon.png"
+          }
+        },
+        {
+          "slot": "feet",
+          "name": "Musketeer's Rivets Riding Boots",
+          "nameCn": "快枪手的铆钉马靴",
+          "images": {
+            "icon": "assets/relics/musketeer_feet_icon.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "301",
+      "name": "Space Sealing Station",
+      "nameCn": "太空封印站",
+      "type": "planar",
+      "pieces": [
+        {
+          "slot": "sphere",
+          "name": "Space Sealing Station's Herta's Wanderland",
+          "nameCn": "「黑塔」的游乐园",
+          "images": {
+            "icon": "assets/relics/space_sealing_sphere_icon.png"
+          }
+        },
+        {
+          "slot": "rope",
+          "name": "Space Sealing Station's Herta's Supply Zone",
+          "nameCn": "「黑塔」的办公区",
+          "images": {
+            "icon": "assets/relics/space_sealing_rope_icon.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "302",
+      "name": "Fleet of the Ageless",
+      "nameCn": "不老者的仙舟",
+      "type": "planar",
+      "pieces": [
+        {
+          "slot": "sphere",
+          "name": "Fleet of the Ageless's Celestial Ark",
+          "nameCn": "仙舟「罗浮」",
+          "images": {
+            "icon": "assets/relics/fleet_sphere_icon.png"
+          }
+        },
+        {
+          "slot": "rope",
+          "name": "Fleet of the Ageless's Heavenly Henge",
+          "nameCn": "仙舟「鳞渊」",
+          "images": {
+            "icon": "assets/relics/fleet_rope_icon.png"
+          }
+        }
+      ]
+    }
+  ]
+}
