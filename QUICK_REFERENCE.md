@@ -208,6 +208,15 @@ const iceChars = data.characters.filter(c => c.element === 'ice');
   - `sidebar`: { `path`, `position`(left/right), `width`(px), `anchor` }
 - 资源路径：`assets/ui/profile_backgrounds/*` 或 `assets/paths/profile_backgrounds/{pathId}/*`
 
+### Profile Avatars | 资料头像
+- 结构文件：`database/avatars.json`
+- 字段：
+  - `avatars[]`: 全局头像数组
+    - `id`、`nameCn`、`nameEn`、`path`
+    - `layout`: { `shape`("circle"|"square"|"rounded"), `size`(px), `anchor`("top-left"|"top-right"|"bottom-left"|"bottom-right"), `offset`({x,y}) }
+    - `default`: bool（默认头像）
+- 资源路径：沿用背景目录下的 avatars 子目录
+
 ## File Naming Convention | 文件命名规范
 
 ### Characters | 角色
